@@ -3,35 +3,17 @@
 <head>
     <title>Messaging Board</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .message-board {
-            width: 50%;
-            margin: auto;
-            border: 1px solid #000;
-            padding: 10px;
-        }
-        .message {
-            border-bottom: 1px solid #000;
-            padding: 10px;
-        }
-        .message:last-child {
-            border-bottom: none;
-        }
+        /* Add your CSS here */
     </style>
 </head>
 <body>
-    <div class="message-board">
-        <div class="message">
-            <h2>Message Title 1</h2>
-            <p>This is the content of the first message.</p>
-        </div>
-        <div class="message">
-            <h2>Message Title 2</h2>
-            <p>This is the content of the second message.</p>
-        </div>
-        <!-- Add more messages as needed -->
+    <div id="message-board">
+        <!-- Messages will be added here dynamically -->
     </div>
+    <form id="message-form">
+        <input type="text" id="message-input" placeholder="Type your message here">
+        <button type="submit">Send</button>
+    </form>
+    <script src="script.js"></script>
 </body>
 </html>
